@@ -1,0 +1,121 @@
+#section1 {
+    margin-top: 66px;
+    .wrap {
+        width: 1160px;
+        position: relative;
+        margin: auto;
+        @media (max-width: 768px) {
+            width: 100%;
+            padding-top: 50px;
+        }
+        h2 {
+            min-width: 1160px;
+            padding: 130px 0 60px 0;
+            margin: auto;
+            font-size: 42px;
+            font-family: "Oswald";
+            text-align: center;
+            position: relative;
+            @media (max-width: 768px) {
+                min-width: auto;
+                padding: 0 0 40px 0;
+                font-size: 21px;
+            }
+        }
+        h2::before,h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 1px;
+            width: 60px;
+            background-color: black;
+            transform: translate(-50%,0) rotate(60deg);
+            @media (max-width: 768px) {
+                transform: rotate(50deg);
+            }
+        }
+        h2::before {
+            background-color: grey;
+        }
+        .number {
+            top: 0;
+            right: 80px;
+            position: absolute;
+            z-index: -10;
+            @media (max-width: 768px) {
+                width: 128px;
+                height: 125px;
+                right: -5px;
+                object-fit: cover;
+            }
+        }
+        .block1 {
+            position: relative;
+            @media (max-width:768px) {
+                width: 100%;
+                height: 505px;
+                padding-bottom: 40px;
+                background-color: #ececec;
+            }
+            img {
+                margin: auto;
+                display: block;
+                z-index: -5;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    height: 230px;
+                    object-fit: cover;
+                }
+            }
+            .text-area {
+                width: 410px;
+                height: 402px;
+                top: 50%;
+                right: 0;
+                transform: translate(0,-50%);
+                font-size: 14px;
+                font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;;
+                background-color: white;
+                position: absolute;
+                @media (max-width: 768px) {
+                    width: auto;
+                    height: 196px;
+                    top: 230px;
+                    right: auto;
+                    padding: 30px 20px 20px 20px;
+                    margin: 30px 20px 0 20px;
+                    transform: translate(0,0);
+                    position: static;
+                }
+                .large {
+                    width: 360px;
+                    height: 34px;
+                    padding: 60px 0 10px 40px;
+                    font-size: 19px;
+                    line-height: 34px;
+                    @media (max-width: 768px) {
+                        width: auto;
+                        height: auto;
+                        padding: 0 0 10px 0;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                }
+                .text {
+                    width: 360px;
+                    height: 74px;
+                    padding: 0 0 8px 40px;
+                    line-height: 25px;
+                    @media (max-width: 768px) {
+                        width: auto;
+                        height: auto;
+                        padding: 0 0 6px 0;
+                        font-size: 12px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
